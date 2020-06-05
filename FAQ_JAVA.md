@@ -6,15 +6,18 @@
 
 *Мы его добавляем в метод
 
+```java
 *public void increaseCurrentTemperature(){
     if (!isOn()) return;
     if (currentTemperature >= maxTemperature)
         return;
     currentTemperature++;
 }
+```
 
 *Это значит когда будет false  вызов след метода не выполняется, ну то есть выполняется со значением false
 
+```java
 public void setOff() {
     AirConditioner conditioner = new AirConditioner();
     conditioner.setOn(false);
@@ -22,7 +25,7 @@ public void setOff() {
     assertEquals(9, conditioner.getCurrentTemperature());
     assertEquals(false, conditioner.isOn());
 }
-
+```
 
 *только там у тебя нет вызова метода conditioner.decreaseCurrentTemperature(); или conditioner.increaseCurrentTemperature();
 
